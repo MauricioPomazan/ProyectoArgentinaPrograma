@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Indie+Flower&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.ico">
+  <title>Fast Food Truck</title>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="header__nav">
+      <img src="assets/imagen (1).png" alt="" class="header__nav_img">
+      <ul class="header__nav_ul">
+        <div class="header__div_li">
+          <li class="header__nav_li"><a class="header__nav_a" href="#empresa">Empresa</a></li>
+          <li class="header__nav_li"><a class="header__nav_a" href="#nosotros">Nosotros</a></li>
+          <li class="header__nav_li"><a class="header__nav_a" href="#menu">Menú</a></li>
+          <li class="header__nav_li"><a class="header__nav_a" href="#contacto">Contacto</a></li>
+          <li class="header__nav_li header__nav_li-act"><a class="header__nav_a" href="#agradecimientos">Agradecimientos</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <article>
+
+    <section class="empresa" id="empresa">
+      <div class="empresa__div1">
+        <h1 class="empresa__titulo">Fast Food Truck</h1>
+        <p class="empresa__p">
+          Somos una empresa familiar fundada el 31 de julio de 1988, con alto conocimiento en la producción y venta de comidas rápidas, la experiencia adquirida a través de los años, nos da el conocimiento para valorar la importancia del cliente, quien es el motivo de nuestros esfuerzos, y así llegar a ustedes con la seguridad de poder ofrecerles nuestros productos de excelente calidad con responsabilidad y cumplimiento. Contamos con excelente calidad humana que les brindara la atención apropiada, para de esta manera poder llegar a saber y entender sus gustos y necesidades. El hecho de contar con ustedes como nuestros clientes es motivo de satisfacción.</p>
+      </div>
+      <div class="empresa__div2">
+        <img src="assets/hamburguesa-sobre-fondo-negro-menu_127425-584.avif" alt="" class="empresa__img">
+      </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+      <h2 class="nosotros__titulo">Nosotros</h2>
+      <div class="nosotros__contenedor">
+        <div class="nosotros__card">
+          <img src="assets/carlos.jpg" alt="" class="nosotros__img">
+          <h3 class="nosotros__name">Juan Carlitos</h3>
+          <p class="nosotros__prof">Ventas</p>
+        </div>
+        <div class="nosotros__card">
+          <img src="assets/solticia.jpg" alt="" class="nosotros__img">
+          <h3 class="nosotros__name">Nerea Solticia</h3>
+          <p class="nosotros__prof">Logistica</p>
+        </div>
+        <div class="nosotros__card">
+          <img src="assets/pepes.jpg" alt="" class="nosotros__img">
+          <h3 class="nosotros__name">Pepe Pompin</h3>
+          <p class="nosotros__prof">Producción</p>
+        </div>
+        <div class="nosotros__card">
+          <img src="assets/braulio.jpg" alt="" class="nosotros__img">
+          <h3 class="nosotros__name">Braulio Gomez</h3>
+          <p class="nosotros__prof">Diseñador</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h2 class="menu__titulo">Nuestro Menu</h2>
+      <div class="menu__contenedor">
+        <div class="menu__card">
+          <div>
+            <!--Menu 1-------------------------------------------------------------------->
+            <img src="assets/quintuple.jpg" alt="" class="menu__cardimg" />
+          </div>
+          <div class="menu__datos">
+            <h3>Quintuple Queso y Bacon</h3>
+            <input
+              id="Producto1"
+              nombre="Quintuple"
+              value="Quintuple Queso y Bacon"
+              style="display: none"
+            />
+            <ul>
+              <li>Carne X5</li>
+              <li>Cheddar X5</li>
+              <li>Bacon</li>
+            </ul>
+            <h4>$1800</h4>
+            <input id="Precio1" value="1800" style="display: none" />
+            <button type="submit" value="agregar1" class="menu__btn" onclick="verificarPrecio1()">
+              Agregar
+            </button>
+          </div>
+        </div>
+        <div class="menu__card">
+          <!--Menu 2-------------------------------------------------------------------->
+          <div>
+            <img src="assets/simple.jpg" alt="" class="menu__cardimg" />
+          </div>
+          <div class="menu__datos">
+            <h3>Hamburguesa Con Queso</h3>
+            <input
+              id="Producto2"
+              nombre="Hamburguesa con queso"
+              value="Hamburguesa con queso"
+              style="display: none"
+            />
+            <ul>
+              <li>Pan de Papa</li>
+              <li>Carne de 100gr</li>
+              <li>Cheddar</li>
+              <br>
+            </ul>
+            <h3>$1300</h3>
+            <input id="Precio2" value="1300" style="display: none" />
+            <button type="submit" class="agregar menu__btn" onclick="verificarPrecio2()">
+              Agregar
+            </button>
+          </div>
+          <!--Menu 3-------------------------------------------------------------------->
+        </div>
+        <div class="menu__card">
+          <div>
+            <img src="assets/tapaarterias.jpg" alt="" class="menu__cardimg" />
+          </div>
+          <div class="menu__datos">
+            <h3>La Tapa Arterias</h3>
+            <input
+              id="Producto3"
+              nombre="Tapa arterias"
+              value="Tapa Arterias"
+              style="display: none"
+            />
+            <ul>
+              <li>Carne X6</li>
+              <li>Cheddar X6</li>
+              <li>Bacon</li>
+              <li>Cebolla Caramelizada</li>
+            </ul>
+            <h4>$2000</h4>
+            <input id="Precio3" value="2000" style="display: none" />
+            <button type="submit" class="agregar menu__btn" onclick="verificarPrecio3()">
+              Agregar
+            </button>
+          </div>
+          <!--Menu 4-------------------------------------------------------------------->
+        </div>
+        <div class="menu__card">
+          <div>
+            <img src="assets/fritaschedar.jpg" alt="" class="menu__cardimg" />
+          </div>
+          <div class="menu__datos">
+            <h3>Papas Fritas Con C y B</h3>
+            <input
+              id="Producto4"
+              nombre="Fritas con C y B"
+              value="Fritas con C y B"
+              style="display: none"
+            />
+            <ul>
+              <li>Papas Fritas</li>
+              <li>Cheddar</li>
+              <li>Bacon</li>
+              <li>Cebollita de Verdeo</li>
+            </ul>
+            <h4>$1500</h4>
+            <input id="Precio4" value="1500" style="display: none" />
+            <button type="submit"  class="agregar menu__btn" onclick="verificarPrecio4()">
+              Agregar
+            </button>
+          </div>
+          <!--Menu 5 --------------------------------------------------------------------------------->
+        </div>
+        <div class="menu__card">
+          <div>
+            <img src="assets/aros.jpg" alt="" class="menu__cardimg" />
+          </div>
+          <div class="menu__datos">
+            <h3>Aros de Cebolla</h3>
+            <input
+              id="Producto5"
+              nombre="Aros de cebolla"
+              value="Aros de cebolla"
+              style="display: none"
+            />
+            <ul>
+              <li>Aros de Cebolla</li>
+              <li>Salsa Barbacoa</li>
+              <li>Semillas de Sesamo</li>
+              <br><br>
+            </ul>
+            <h4>$1300</h4>
+            <input id="Precio5" value="1300" style="display: none" />
+            <button id="" type="submit" class="agregar menu__btn" onclick="verificarPrecio5()">
+              Agregar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pedido">
+      <h2 class="pedido__titulo">Tu Pedido</h2>
+      <ol class="itemsagregados" id="itemsagregados">
+
+      </ol>
+      <p class="preciototal">
+
+      </p>
+      <button type="submit" id="boton-vaciar" class="menu__btn menu__btn2" onclick="vaciarCampos()">Limpiar campos</button>
+      <button type="submit" id="boton-enviar" class="menu__btn menu__btn2" onclick="enviarPedido()">Enviar Pedido</button>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h2 class="contacto__titulo">Contactanos</h2>
+        <form action="" class="formulario contacto__form" id="formulario">
+          <div class="contenedor__form">
+            <div class="contacto__inputs">
+              <div id="grupo__nombre" name="grupo__nombre" class="formulario__grupo contacto__input">
+                <label class="formulario__label" for="nombre">Nombre</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" name="nombre" class="formulario__input input-nombre" id="nombre" placeholder="Nelson Monts" required>
+                  <i class="formulario__validacion-estado las la-times-circle" id="i"></i>
+                </div>
+                <p class="formulario__input-error">Ingrese unicamente letras mayusculas, minusculas y espacios</p>
+              </div>
+              <div id="grupo__email" name="grupo__email" class="formulario__grupo contacto__input">
+                <label class="formulario__label" for="email">Email</label>
+                <div class="formulario__grupo-input">
+                  <input type="email" name="email" class="formulario__input input-email" id="email" placeholder="ahah@gmail.com" required>
+                  <i class="formulario__validacion-estado las la-times-circle" id="i"></i>
+                </div>
+                <p class="formulario__input-error">Ingrese un email valido</p>
+              </div>
+              <div id="grupo__asunto" class="formulario__grupo contacto__input">
+                <label class="formulario__label" for="asunto">Asunto</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" name="asunto" class="formulario__input input-asunto" id="asunto" placeholder="Tema a tratar" required>
+                  <i class="formulario__validacion-estado las la-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Solo se permiten letras, numeros, guion , guion bajo o espacio. Desde 4 hasta 26 caracteres</p>
+              </div>
+              <div id="grupo__telefono" class="formulario__grupo contacto__input">
+                <label class="formulario__label" for="telefono">Telefono</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" name="telefono" class="formulario__input input-telefono" id="telefono" placeholder="1533669911" required>
+                  <i class="formulario__validacion-estado las la-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ingrese unicamente numeros (De 7 a 14 caracteres)</p>
+              </div>
+              <div>
+                <button type="submit" class="section3__btn contacto__btn">Enviar</button>
+              </div>
+            </div>
+            <div class="contacto__area">
+              <label for="">Escribe aquí</label>
+              <textarea name="areadecontacto" id="comentario" class="section3__area contacto__areatext input-area" rows="8" required></textarea>
+            </div>
+          </div>
+      </form>
+    </section>
+    <section class="agradecimientos" id="agradecimientos">
+      <h2 class="agradecimientos__titulo">Agradecimientos</h2>
+      <div id="api" class="agradecimientos__div">
+
+      </div>
+    </section>
+  </article>
+  <footer class="rodapie">
+    <div class="rodapie__contenedor">
+      <ul class="rodapie__ul">
+        <li class="rodapie__li"><a href="#">Sponsors</a></li>
+        <li class="rodapie__li"><a href="#">Recursos Humanos</a></li>
+        <li class="rodapie__li"><a href="#">Franquicias</a></li>
+      </ul>
+      <ul class="rodapie__ul">
+        <li class="rodapie__icon"><a href="#"><i class="lab la-facebook-f"></i></a></li>
+        <li class="rodapie__icon"><a href="#"><i class="lab la-instagram"></i></a></li>
+        <li class="rodapie__icon"><a href="#"><i class="lab la-twitter"></i></a></li>
+      </ul>
+    </div>
+    <div class="rodapie__copy">
+      <p>© Fast Food Truck - Todos los Derechos Reservados 2023</p>
+    </div>
+  </footer>
+
+  <script src="home.js"></script>
+  <script src="main.js"></script>
+  <script src="api.js" type="module"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="scroll.js"></script>
+
+</body>
+
+</html>
