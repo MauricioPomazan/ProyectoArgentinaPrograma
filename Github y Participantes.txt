@@ -1,0 +1,10 @@
+Repositorio
+https://github.com/MauricioPomazan?tab=repositories
+
+Github Pages
+https://github.com/MauricioPomazan/ProyectoArgentinaPrograma
+
+Participantes
+Rodrigo Alonzo - JS y Validaciones
+Rossi Antunez Matias Ezequiel - Maquetacion y Diseño
+Pomazan Mauricio - Diseño de alertas con swal y ajustes de AP
